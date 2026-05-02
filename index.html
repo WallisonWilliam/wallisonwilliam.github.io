@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallison William · Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(900px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid #30363d;
+      padding: 18px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      color: #e6edf3;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .links a {
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .links a:hover {
+      color: #58a6ff;
+    }
+
+    main {
+      padding: 72px 0 48px;
+    }
+
+    .hero {
+      max-width: 680px;
+    }
+
+    .status {
+      color: #58a6ff;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      color: #8b949e;
+      font-size: 17px;
+      max-width: 620px;
+      margin-bottom: 28px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid #30363d;
+    }
+
+    .button.primary {
+      background: #238636;
+      color: white;
+      border-color: #238636;
+    }
+
+    .button.secondary {
+      color: #e6edf3;
+      background: transparent;
+    }
+
+    section {
+      padding: 48px 0;
+      border-top: 1px solid #30363d;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .text {
+      color: #8b949e;
+      max-width: 680px;
+      font-size: 15px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      border: 1px solid #30363d;
+      color: #c9d1d9;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      background: #161b22;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .contact-list a {
+      color: #58a6ff;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    footer {
+      border-top: 1px solid #30363d;
+      padding: 24px 0;
+      color: #8b949e;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .links {
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      main {
+        padding-top: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">Wallison William</a>
+      <nav class="links">
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="status">Disponível para oportunidades · Recife, PE</div>
+      <h1>Desenvolvedor de Software Júnior</h1>
+      <p>
+        Formado em Ciência da Computação e em transição para desenvolvimento,
+        com foco em Java, Spring Boot, JavaScript e banco de dados.
+      </p>
+      <div class="buttons">
+        <a class="button primary" href="mailto:wallison.wmelo@gmail.com">Entrar em contato</a>
+        <a class="button secondary" href="https://github.com/wallisonwilliam" target="_blank">GitHub</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/wallisonwilliam/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre mim</h2>
+      <p class="text">
+        Tenho experiência em sistemas corporativos, análise de chamados, suporte a aplicações
+        e consultas em SQL Server. Atualmente aprofundo meus estudos em desenvolvimento web,
+        APIs REST e boas práticas de código.
+      </p>
+    </div>
+  </section>
+
+  <section id="tecnologias">
+    <div class="container">
+      <h2>Tecnologias</h2>
+      <p class="text">Principais tecnologias que estudo e utilizo no dia a dia.</p>
+      <div class="stack">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Git</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p class="text">Você pode me encontrar pelos canais abaixo.</p>
+      <div class="contact-list">
+        <a href="mailto:wallison.wmelo@gmail.com">wallison.wmelo@gmail.com</a>
+        <a href="https://github.com/wallisonwilliam" target="_blank">github.com/wallisonwilliam</a>
+        <a href="https://www.linkedin.com/in/wallisonwilliam/" target="_blank">linkedin.com/in/wallisonwilliam</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2026 Wallison William</div>
+  </footer>
+</body>
+</html>
