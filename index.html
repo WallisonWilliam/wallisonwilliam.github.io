@@ -63,7 +63,33 @@
     }
 
     .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 210px;
+      align-items: center;
+      gap: 36px;
+    }
+
+    .hero-content {
       max-width: 680px;
+    }
+
+    .photo-card {
+      width: 210px;
+      aspect-ratio: 1;
+      border-radius: 28px;
+      padding: 4px;
+      background: linear-gradient(135deg, #58a6ff, #238636);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
     }
 
     .status {
@@ -236,6 +262,15 @@
         flex-direction: column;
       }
 
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-card {
+        width: 170px;
+        order: -1;
+      }
+
       .links {
         gap: 12px;
         flex-wrap: wrap;
@@ -267,16 +302,22 @@
 
   <main class="container">
     <div class="hero">
-      <div class="status">Disponível para oportunidades · Recife, PE</div>
-      <h1>Desenvolvedor de Software Júnior</h1>
-      <p>
-        Formado em Ciência da Computação e em transição para desenvolvimento,
-        com foco em Java, Spring Boot, JavaScript e banco de dados.
-      </p>
-      <div class="buttons">
-        <a class="button primary" href="mailto:wallison.wmelo@gmail.com">Entrar em contato</a>
-        <a class="button secondary" href="https://github.com/wallisonwilliam" target="_blank">GitHub</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/wallisonwilliam/" target="_blank">LinkedIn</a>
+      <div class="hero-content">
+        <div class="status">Disponível para oportunidades · Recife, PE</div>
+        <h1>Desenvolvedor de Software Júnior</h1>
+        <p>
+          Formado em Ciência da Computação e em transição para desenvolvimento,
+          com foco em Java, Spring Boot, JavaScript e banco de dados.
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="mailto:wallison.wmelo@gmail.com">Entrar em contato</a>
+          <a class="button secondary" href="https://github.com/wallisonwilliam" target="_blank">GitHub</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/wallisonwilliam/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="photo-card" aria-label="Foto de Wallison William">
+        <img class="profile-photo" src="profile.jpg" alt="Wallison William">
       </div>
     </div>
   </main>
